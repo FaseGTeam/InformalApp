@@ -9,3 +9,7 @@ C:\Users\ESTUDIANTES\Downloads\ProyectoInformalApp(German17092017).txt\ProyectoI
 C:\Users\ESTUDIANTES\Downloads\ProyectoInformalApp(German17092017).txt\ProyectoInformalApp\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.exe
 C:\Users\ESTUDIANTES\Downloads\ProyectoInformalApp(German17092017).txt\ProyectoInformalApp\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.xml
 C:\Users\ESTUDIANTES\Downloads\ProyectoInformalApp(German17092017).txt\ProyectoInformalApp\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.pdb
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\bin\Debug\ProyectoInformalApp.exe.config
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.exe
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.xml
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.pdb
