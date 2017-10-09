@@ -25,3 +25,7 @@ C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInform
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.exe
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.xml
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.pdb
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\bin\Debug\ProyectoInformalApp.exe.config
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.exe
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.xml
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.pdb
