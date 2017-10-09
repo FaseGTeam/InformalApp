@@ -16,7 +16,7 @@ CREATE TABLE Trabajador(
 
 CREATE TABLE Contratista(
     IdConstratista INT NOT NULL AUTO_INCREMENT,
-	Cédula INT NOT NULL,
+    Cédula INT NOT NULL,
     Nombre VARCHAR(25) NOT NULL,
     Apellido VARCHAR(25) NOT NULL,
     Fecha_Nacimiento DATE NOT NULL,
