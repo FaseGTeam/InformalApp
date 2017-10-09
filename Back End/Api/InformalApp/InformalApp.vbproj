@@ -79,6 +79,8 @@
     <Compile Include="Clases\Estado.vb" />
     <Compile Include="Clases\Labor.vb" />
     <Compile Include="Clases\Modulos\Contratista.vb" />
+    <Compile Include="Clases\Modulos\Labor.vb" />
+    <Compile Include="Clases\Modulos\Trabajador.vb" />
     <Compile Include="Clases\Persona.vb" />
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
