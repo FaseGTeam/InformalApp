@@ -25,7 +25,14 @@ C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInform
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.exe
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.xml
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.pdb
+<<<<<<< HEAD
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\bin\Debug\ProyectoInformalApp.exe.config
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.exe
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.xml
+C:\Users\salfonsog\Documents\GitHub\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.pdb
+=======
 H:\Escritorio anterior\Unin\InformalApp\Back End\Api\ProyectoInformalApp\bin\Debug\ProyectoInformalApp.exe.config
 H:\Escritorio anterior\Unin\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.exe
 H:\Escritorio anterior\Unin\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.xml
 H:\Escritorio anterior\Unin\InformalApp\Back End\Api\ProyectoInformalApp\obj\Debug\ProyectoInformalApp.pdb
+>>>>>>> a44401d5d7ad6e4ae6e1c08b6c66b3dba74495d8
