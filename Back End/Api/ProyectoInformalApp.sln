@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProyectoInformalApp", "ProyectoInformalApp\ProyectoInformalApp.vbproj", "{A4FC1C50-8516-4843-A16E-2C562CA0022B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InformalApp", "InformalApp\InformalApp.vbproj", "{0D779051-A9A7-4838-9C30-B580641952F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{A4FC1C50-8516-4843-A16E-2C562CA0022B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4FC1C50-8516-4843-A16E-2C562CA0022B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4FC1C50-8516-4843-A16E-2C562CA0022B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D779051-A9A7-4838-9C30-B580641952F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D779051-A9A7-4838-9C30-B580641952F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D779051-A9A7-4838-9C30-B580641952F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D779051-A9A7-4838-9C30-B580641952F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34F189C0-DB42-4CD1-B088-2C88BAF521F6}
 	EndGlobalSection
 EndGlobal

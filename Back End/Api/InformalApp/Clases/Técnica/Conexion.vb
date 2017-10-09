@@ -47,7 +47,7 @@ Public Class Conexion
             If Sqlex.Number = 1088 Then
                 Salida = "Registro Duplicado"
             Else
-                Dim log01 As New Log(1, $"Error {Sqlex.Message}", Date.Today)
+                Dim log01 As New Log(1, $"Error {Sqlex.Message}", Date.Today, "")
 
             End If
         End Try
