@@ -1,49 +1,35 @@
-﻿Imports MySql.Data.MySqlClient
-
-Public Class Frm_Trabajador
+﻿Public Class Frm_Trabajador
     Dim HojaVidaTrabajador As Boolean
-    Public DataTable As New DataTable
-    Public DataReader As MySqlDataReader
+    Dim HojaVidaTrabajadorS As String
+    Dim DataReader As MySql.Data.MySqlClient.MySqlDataReader
 
     Private Sub Frm_Trabajador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DataTable.Columns.Add("Cédula")
-        DataTable.Columns.Add("Nombres")
-        DataTable.Columns.Add("Apellidos")
-        DataTable.Columns.Add("Género")
-        DataTable.Columns.Add("Fecha Nacimiento")
-        DataTable.Columns.Add("Profesión")
-        DataTable.Columns.Add("Nivel Educativo")
-        DataTable.Columns.Add("Exp. Laboral")
-        DataTable.Columns.Add("Hoja de Vida")
-
     End Sub
 
     Private Sub Button_ConsultarT_Click(sender As Object, e As EventArgs) Handles Button_ConsultarT.Click
         Dim ConsultarTrabajador As CRUD_Trabajador = New CRUD_Trabajador
-        DataTable.Clear()
         Try
-            ConsultarTrabajador.ReadData(TextBox_CedulaT.Text,
-                                     TextBox_NombresT.Text,
-                                     TextBox_ApellidosT.Text,
-                                     ComboBox_GeneroT.Text,
-                                     MaskedTextBox_FecNacimientoT.Text,
-                                     TextBox_ProfesionT.Text,
-                                     TextBox_LvlEducativoT.Text,
-                                     TextBox_ExpLaboralT.Text,
-                                     HojaVidaTrabajador)
 
-            DataTable.Rows.Add(DataReader.Item("Cédula"),
-                               DataReader.Item("Nombres"),
-                               DataReader.Item("Apellidos"),
-                               DataReader.Item("Género"),
-                               DataReader.Item("Fecha Nacimiento"),
-                               DataReader.Item("Profesión"),
-                               DataReader.Item("Nivel Educativo"),
-                               DataReader.Item("Exp. Laboral"),
-                               DataReader.Item("Hoja de Vida"))
+            DataReader = ConsultarTrabajador.ReadData(TextBox_CedulaT.Text)
 
-            DataReader.Close()
-            DataGridView_Trabajador.DataSource = DataTable
+            While DataReader.Read()
+                If DataReader("HojaVida").ToString = True Then
+                    HojaVidaTrabajadorS = "Si"
+                Else
+                    HojaVidaTrabajadorS = "No"
+                End If
+
+                TextBox_CedulaT.Text = DataReader("Cedula").ToString
+                TextBox_NombresT.Text = DataReader("Nombre").ToString
+                TextBox_ApellidosT.Text = DataReader("Apellido").ToString
+                ComboBox_GeneroT.Text = DataReader("Genero").ToString
+                MaskedTextBox_FecNacimientoT.Text = DataReader.GetDateTime("Fecha_Nacimiento").ToString("yyyy/MM/dd")
+                TextBox_ProfesionT.Text = DataReader("Profesion").ToString
+                TextBox_LvlEducativoT.Text = DataReader("LvlEducativo").ToString
+                TextBox_ExpLaboralT.Text = DataReader("ExpTrabajo").ToString
+                ComboBox_HojaVidaT.Text = HojaVidaTrabajadorS
+
+            End While
         Catch ex As Exception
             MsgBox(ex)
         End Try

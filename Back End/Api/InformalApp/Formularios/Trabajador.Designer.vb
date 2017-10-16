@@ -45,8 +45,6 @@ Partial Class Frm_Trabajador
         Me.Label_HojaVidaT = New System.Windows.Forms.Label()
         Me.MaskedTextBox_FecNacimientoT = New System.Windows.Forms.MaskedTextBox()
         Me.ComboBox_HojaVidaT = New System.Windows.Forms.ComboBox()
-        Me.DataGridView_Trabajador = New System.Windows.Forms.DataGridView()
-        CType(Me.DataGridView_Trabajador, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox_CedulaT
@@ -245,20 +243,11 @@ Partial Class Frm_Trabajador
         Me.ComboBox_HojaVidaT.Size = New System.Drawing.Size(75, 21)
         Me.ComboBox_HojaVidaT.TabIndex = 24
         '
-        'DataGridView_Trabajador
-        '
-        Me.DataGridView_Trabajador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_Trabajador.Location = New System.Drawing.Point(44, 341)
-        Me.DataGridView_Trabajador.Name = "DataGridView_Trabajador"
-        Me.DataGridView_Trabajador.Size = New System.Drawing.Size(325, 150)
-        Me.DataGridView_Trabajador.TabIndex = 25
-        '
         'Frm_Trabajador
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(403, 492)
-        Me.Controls.Add(Me.DataGridView_Trabajador)
         Me.Controls.Add(Me.ComboBox_HojaVidaT)
         Me.Controls.Add(Me.MaskedTextBox_FecNacimientoT)
         Me.Controls.Add(Me.Label_HojaVidaT)
@@ -284,7 +273,6 @@ Partial Class Frm_Trabajador
         Me.Controls.Add(Me.TextBox_CedulaT)
         Me.Name = "Frm_Trabajador"
         Me.Text = "Trabajador"
-        CType(Me.DataGridView_Trabajador, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -313,5 +301,4 @@ Partial Class Frm_Trabajador
     Friend WithEvents Label_HojaVidaT As Label
     Friend WithEvents MaskedTextBox_FecNacimientoT As MaskedTextBox
     Friend WithEvents ComboBox_HojaVidaT As ComboBox
-    Friend WithEvents DataGridView_Trabajador As DataGridView
 End Class

@@ -4,12 +4,12 @@ USE DB_InformalApp;
 
 CREATE TABLE Trabajador(
     IdTrabajador INT NOT NULL AUTO_INCREMENT,
-    Cédula INT NOT NULL,
+    Cedula INT NOT NULL,
     Nombre VARCHAR(25) NOT NULL,
     Apellido VARCHAR(25) NOT NULL,
     Genero VARCHAR(10) NOT NULL,
     Fecha_Nacimiento DATE NOT NULL,
-    Profesión VARCHAR(30) NOT NULL,
+    Profesion VARCHAR(30) NOT NULL,
     LvlEducativo VARCHAR(20) NOT NULL,
     ExpTrabajo VARCHAR(10) NOT NULL,
     HojaVida BOOLEAN not NULL, 
@@ -18,7 +18,7 @@ CREATE TABLE Trabajador(
 
 CREATE TABLE Contratista(
     IdConstratista INT NOT NULL AUTO_INCREMENT,
-    Cédula INT NOT NULL,
+    Cedula INT NOT NULL,
     Nombre VARCHAR(25) NOT NULL,
     Apellido VARCHAR(25) NOT NULL,
     Fecha_Nacimiento DATE NOT NULL,
@@ -29,15 +29,15 @@ CREATE TABLE Contratista(
 
 CREATE TABLE Estado(
     IdEstado INT NOT NULL AUTO_INCREMENT,
-	CódigoEstado INT NOT NULL,
-    Descripción VARCHAR(30) NOT NULL,
+	CodigoEstado INT NOT NULL,
+    Descripcion VARCHAR(30) NOT NULL,
     PRIMARY KEY (IdEstado)
 )  ENGINE=InnoDB;
 
 CREATE TABLE TipoLabor(
     IdTipo INT NOT NULL AUTO_INCREMENT,
 	Nombre VARCHAR(30) NOT NULL,
-    Descripción VARCHAR(50) NOT NULL,
+    Descripcion VARCHAR(50) NOT NULL,
     IdEstado INT NOT NULL,
     PRIMARY KEY (IdTipo),
     CONSTRAINT IdEstado FOREIGN KEY (IdEstado) REFERENCES Estado (IdEstado)
@@ -45,7 +45,7 @@ CREATE TABLE TipoLabor(
 
 CREATE TABLE Labor(
     IdLabor INT NOT NULL AUTO_INCREMENT,
-	Descripción VARCHAR(50) NOT NULL,
+	Descripcion VARCHAR(50) NOT NULL,
     FecIniLabor DATE NOT NULL,
     FecFinLabor DATE NOT NULL,
     IdContratista INT NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE Labor(
 
 CREATE TABLE TipoLog(
     IdTipoL INT NOT NULL AUTO_INCREMENT,
-	CódigoTipoL INT NOT NULL,
+	CodigoTipoL INT NOT NULL,
     DescripciónL VARCHAR(25) NOT NULL,
     PRIMARY KEY (IdTipoL)
 )  ENGINE=InnoDB;

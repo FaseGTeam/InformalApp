@@ -1,42 +1,27 @@
 ﻿Public Class CRUD_Trabajador
     Dim Fecha As Date
-
+    Dim DataReader As MySql.Data.MySqlClient.MySqlDataReader
     'Obtiene todos los contratistas de db'
-    Public Sub ReadData(ByVal Cedula As Integer,
-                        ByVal Nombres As String,
-                        ByVal Apellidos As String,
-                        ByVal Genero As String,
-                        ByVal FecNacimiento As String,
-                        ByVal Profesion As String,
-                        ByVal LvlEducativo As String,
-                        ByVal ExpLaboral As String,
-                        ByVal HojaVida As Boolean)
+    Public Function ReadData(ByVal Cedula As Integer)
         Try
             Dim ConexionGuardar As New Conexion
             Dim Llamado As String
             Llamado = ConexionGuardar.Conectar()
             If Llamado = "00, Conexion Exitosa" Then
-                Dim Query As String = "SELECT * FROM Trabajador WHERE Cédula = '" & Cedula & "' OR 
-                                                                      Nombre = '" & Nombres & "' OR 
-                                                                      Apellido = '" & Apellidos & "' OR
-                                                                      Genero = '" & Genero & "' OR
-                                                                      Fecha_Nacimiento = '" & FecNacimiento & "' OR
-                                                                      Profesión = '" & Profesion & "' OR 
-                                                                      LvlEducativo = '" & LvlEducativo & "' OR
-                                                                      ExpTrabajo = '" & ExpLaboral & "' OR 
-                                                                      HojaVida = " & HojaVida & ""
+                Dim Query As String = "SELECT * FROM Trabajador WHERE Cedula = '" & Cedula & "'"
+
                 ConexionGuardar.Query.CommandText = Query
                 ConexionGuardar.Query.CommandType = Data.CommandType.Text
                 ConexionGuardar.Query.Connection = ConexionGuardar.Conexion
-                ConexionGuardar.MysqlReader = ConexionGuardar.Query.ExecuteReader()
+                DataReader = ConexionGuardar.Query.ExecuteReader()
             Else
                 MsgBox(Llamado)
             End If
         Catch ex As Exception
             MsgBox(ex)
         End Try
-
-    End Sub
+        Return DataReader
+    End Function
 
     'Método Insert para agregar registros a la tabla Trabajador en la BD'
     Public Sub InsertData(ByVal Cedula As Integer,
@@ -55,12 +40,12 @@
             Dim Salida As String
             Llamado = ConexionGuardar.Conectar()
             If Llamado = "00, Conexion Exitosa" Then
-                Dim Query As String = "INSERT INTO Trabajador (Cédula, 
+                Dim Query As String = "INSERT INTO Trabajador (Cedula, 
                                                                Nombre, 
                                                                Apellido,
                                                                Genero,
                                                                Fecha_Nacimiento, 
-                                                               Profesión, 
+                                                               Profesion, 
                                                                LvlEducativo,
                                                                ExpTrabajo, 
                                                                HojaVida) VALUES ('" & Cedula & "',
@@ -88,7 +73,7 @@
                           ByVal Nombres As String,
                           ByVal Apellidos As String,
                           ByVal Genero As String,
-                          ByVal FecNacimiento As Date,
+                          ByVal FecNacimiento As String,
                           ByVal Profesion As String,
                           ByVal LvlEducativo As String,
                           ByVal ExpLaboral As String,
@@ -103,11 +88,11 @@
                                                              Apellido = '" & Apellidos & "',
                                                              Genero = '" & Genero & "',
                                                              Fecha_Nacimiento = '" & FecNacimiento & "', 
-                                                             Profesión = '" & Profesion & "', 
+                                                             Profesion = '" & Profesion & "', 
                                                              LvlEducativo = '" & LvlEducativo & "',
                                                              ExpTrabajo = '" & ExpLaboral & "', 
                                                              HojaVida = '" & HojaVida & "' 
-                                                         WHERE Cédula = '" & Cedula & "'"
+                                                         WHERE Cedula = '" & Cedula & "'"
                 Salida = ConexionGuardar.Ejecutar(Query)
                 MsgBox(Salida)
             Else
@@ -126,7 +111,7 @@
             Dim Salida As String
             Llamado = ConexionGuardar.Conectar()
             If Llamado = "00, Conexion Exitosa" Then
-                Dim Query As String = "DELETE FROM Trabajador WHERE Cédula = '" & Cedula & "'"
+                Dim Query As String = "DELETE FROM Trabajador WHERE Cedula = '" & Cedula & "'"
 
                 Salida = ConexionGuardar.Ejecutar(Query)
                 MsgBox(Salida)
