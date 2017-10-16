@@ -1,0 +1,13 @@
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.Frm_Trabajador.resources
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.Resources.resources
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.vbproj.GenerateResource.Cache
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.vbproj.CoreCompileInputs.cache
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.exe.config
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.exe
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.pdb
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.xml
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\MySql.Data.dll
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.exe
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.xml
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.pdb
+C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.vbprojResolveAssemblyReference.cache

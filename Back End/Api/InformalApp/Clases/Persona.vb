@@ -1,6 +1,6 @@
 ﻿Public Class Persona
     'Atributos de la Clase Persona'
-    Private _DocIdentidad As Integer 'Documento de Identidad de la persona'
+    Private _Cedula As Integer 'Documento de Identidad de la persona'
     Private _Nombres As String 'Nombres de la Persona'
     Private _Apellidos As String 'Apelllidos de la Persona'
     Private _Genero As String 'Género de la persona'
@@ -9,12 +9,12 @@
     'Propiedades de los Atributos de la clase Persona'
 
     'Propiedad Documento de Identidad de Persona'
-    Public Property DocIdentidad() As String
+    Public Property Cedula() As String
         Get
-            Return _DocIdentidad
+            Return _Cedula
         End Get
         Set(ByVal value As String)
-            _DocIdentidad = value
+            _Cedula = value
         End Set
     End Property 'Fin Propiedad DocIdentidad'
 
@@ -59,12 +59,12 @@
     End Property 'Fin Propiedad FechaNacimiento'
 
     'CONSTRUCTOR de la Clase Persona'
-    Public Sub New(ByVal p1DocIdentidad As Integer,
+    Public Sub New(ByVal p1Cedula As Integer,
                    ByVal P2Nombres As String,
                    ByVal P3Apellidos As String,
                    ByVal p4Genero As String,
                    ByVal p5FecNacimiento As Date)
-        Me.DocIdentidad = p1DocIdentidad
+        Me.Cedula = p1Cedula
         Me.Nombres = P2Nombres
         Me.Apellidos = P3Apellidos
         Me.Genero = p4Genero

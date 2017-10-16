@@ -78,19 +78,19 @@
     <Compile Include="Clases\Contratista.vb" />
     <Compile Include="Clases\Estado.vb" />
     <Compile Include="Clases\Labor.vb" />
-    <Compile Include="Clases\Modulos\Contratista.vb" />
-    <Compile Include="Clases\Modulos\Labor.vb" />
-    <Compile Include="Clases\Modulos\Log.vb" />
-    <Compile Include="Clases\Modulos\Trabajador.vb" />
+    <Compile Include="Clases\Modulos\CRUD_Contratista.vb" />
+    <Compile Include="Clases\Modulos\CRUD_Labor.vb" />
+    <Compile Include="Clases\Modulos\CRUD_Log.vb" />
+    <Compile Include="Clases\Modulos\CRUD_Trabajador.vb" />
     <Compile Include="Clases\Persona.vb" />
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
     <Compile Include="Clases\Técnica\Log.vb" />
-    <Compile Include="Form1.vb">
+    <Compile Include="Formularios\Trabajador.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Formularios\Trabajador.Designer.vb">
+      <DependentUpon>Trabajador.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -110,6 +110,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\Trabajador.resx">
+      <DependentUpon>Trabajador.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

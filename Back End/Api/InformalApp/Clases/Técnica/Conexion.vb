@@ -1,18 +1,21 @@
 ﻿Imports MySql.Data
+Imports MySql.Data.MySqlClient
 
 Public Class Conexion
-    Public Cadena As String = "Database='db_informalapp' ;Data Source='localhost' ;User Id=root;password=root"
+    Public Cadena As String = "Database='db_informalapp' ;Data Source='localhost' ;User Id=root;password=123456"
     Public Registro As Integer
     Public Salida As String
+
 
     Public Conexion As New MySql.Data.MySqlClient.MySqlConnection(Cadena)
     Public Query As New MySql.Data.MySqlClient.MySqlCommand
     Public MysqlReader As MySql.Data.MySqlClient.MySqlDataReader
 
+
     Public Function Conectar() As String
         Try
             Me.Conexion.Open()
-            Me.Salida = "Conexión Exitosa"
+            Me.Salida = "00, Conexion Exitosa"
 
         Catch ax As MySqlClient.MySqlException
         Catch ex As Exception
@@ -53,4 +56,5 @@ Public Class Conexion
         End Try
         Return Salida
     End Function
+
 End Class

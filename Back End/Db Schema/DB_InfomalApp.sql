@@ -1,4 +1,4 @@
-﻿CREATE DATABASE DB_InformalApp;
+CREATE DATABASE DB_InformalApp;
 
 USE DB_InformalApp;
 
@@ -7,8 +7,10 @@ CREATE TABLE Trabajador(
     Cédula INT NOT NULL,
     Nombre VARCHAR(25) NOT NULL,
     Apellido VARCHAR(25) NOT NULL,
+    Genero VARCHAR(10) NOT NULL,
     Fecha_Nacimiento DATE NOT NULL,
     Profesión VARCHAR(30) NOT NULL,
+    LvlEducativo VARCHAR(20) NOT NULL,
     ExpTrabajo VARCHAR(10) NOT NULL,
     HojaVida BOOLEAN not NULL, 
     PRIMARY KEY (IdTrabajador)
