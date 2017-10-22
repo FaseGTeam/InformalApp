@@ -1,5 +1,15 @@
+<<<<<<< HEAD
 *.exe
 *.exe
 *.sou
 bin
 obj
+=======
+
+*.exe
+*.exe
+*.suo
+bin
+obj
+.vs
+>>>>>>> a3c1ce2ad08e8580d92d36a079c625157654f919

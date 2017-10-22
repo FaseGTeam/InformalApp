@@ -76,7 +76,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Contratista.vb" />
-    <Compile Include="Clases\Controladores\ValidacionesFrm.vb" />
     <Compile Include="Clases\Estado.vb" />
     <Compile Include="Clases\Labor.vb" />
     <Compile Include="Clases\Modulos\CRUD_Contratista.vb" />
@@ -87,17 +86,24 @@
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
     <Compile Include="Clases\Técnica\Log.vb" />
-    <Compile Include="Formularios\FrmInicio_Sergio.Designer.vb">
-      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FrmInicio_Sergio.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Formularios\FrmTrabajador.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmTrabajador.Designer.vb">
-      <DependentUpon>FrmTrabajador.vb</DependentUpon>
+    <Compile Include="Formularios\Contratistas.Designer.vb">
+      <DependentUpon>Contratistas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Contratistas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Trabajador.vb" />
+    <Compile Include="Formularios\Trabajador.Designer.vb">
+      <DependentUpon>Trabajador.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -117,9 +123,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\FrmInicio_Sergio.resx">
-      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTrabajador.resx">
       <DependentUpon>FrmTrabajador.vb</DependentUpon>
     </EmbeddedResource>
