@@ -87,6 +87,12 @@
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
     <Compile Include="Clases\Técnica\Log.vb" />
+    <Compile Include="Formularios\FrmInicio_Sergio.Designer.vb">
+      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmInicio_Sergio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\FrmTrabajador.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\FrmInicio_Sergio.resx">
+      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTrabajador.resx">
       <DependentUpon>FrmTrabajador.vb</DependentUpon>
     </EmbeddedResource>
