@@ -1,6 +1,6 @@
 ﻿Public Class Inicio
     Private Sub Btn_Contratistas_Click(sender As Object, e As EventArgs) Handles Btn_Contratistas.Click
-        Dim formContratista = New Frm_Contratista()
+        Dim formContratista = New Frm_Contratistas()
         formContratista.Show()
     End Sub
 

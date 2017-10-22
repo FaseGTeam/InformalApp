@@ -18,7 +18,7 @@
                 MsgBox(Llamado)
             End If
         Catch ex As Exception
-            MsgBox(ex)
+            MsgBox(ex.Message)
         End Try
         Return DataReader
     End Function
@@ -63,7 +63,7 @@
                 MsgBox(Llamado)
             End If
         Catch ex As Exception
-            MsgBox(ex)
+            MsgBox(ex.Message)
         End Try
 
     End Sub 'Fin del Método InsertData'
@@ -99,12 +99,32 @@
                 MsgBox(Llamado)
             End If
         Catch ex As Exception
-            MsgBox(ex)
+            MsgBox(ex.Message)
         End Try
     End Sub 'Fin del Método UpdateData'
 
+    Public Sub DeleteData()
+        Try
+            Dim ConexionGuardar As New Conexion
+            Dim Llamado As String
+            Dim Salida As String
+            Llamado = ConexionGuardar.Conectar()
+            If Llamado = "00, Conexion Exitosa" Then
+                Dim Query As String = "DELETE FROM Trabajador"
+
+                Salida = ConexionGuardar.Ejecutar(Query)
+                MsgBox(Salida)
+            Else
+                MsgBox(Llamado)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Sub
+
     'Método Insert para eliminar registros a la tabla Trabajador en la BD'
-    Public Sub DeleteData(ByVal Cedula As Integer)
+    Public Sub DeleteDataForCedula(ByVal Cedula As Integer)
         Try
             Dim ConexionGuardar As New Conexion
             Dim Llamado As String
@@ -119,7 +139,7 @@
                 MsgBox(Llamado)
             End If
         Catch ex As Exception
-            MsgBox(ex)
+            MsgBox(ex.Message)
         End Try
 
     End Sub 'Fin del Método DeleteData'
