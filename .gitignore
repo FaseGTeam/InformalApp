@@ -2,3 +2,5 @@
 *.exe
 *.exe
 *.suo
+bin
+obj
