@@ -114,7 +114,7 @@ Partial Class FrmInicio_Sergio
         Me.Label_LogInicio.TabIndex = 7
         Me.Label_LogInicio.Text = "Log"
         '
-        'FrmInicio
+        'FrmInicio_Sergio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -128,7 +128,7 @@ Partial Class FrmInicio_Sergio
         Me.Controls.Add(Me.Button_FrmLog)
         Me.Controls.Add(Me.Button_FrmContratista)
         Me.Controls.Add(Me.Button_FrmTrabajador)
-        Me.Name = "FrmInicio"
+        Me.Name = "FrmInicio_Sergio"
         Me.Text = "Inicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()

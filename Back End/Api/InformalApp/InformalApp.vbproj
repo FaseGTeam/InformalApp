@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Contratista.vb" />
+    <Compile Include="Clases\Controladores\ValidacionesFrm.vb" />
     <Compile Include="Clases\Estado.vb" />
     <Compile Include="Clases\Labor.vb" />
     <Compile Include="Clases\Modulos\CRUD_Contratista.vb" />
@@ -86,6 +87,21 @@
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
     <Compile Include="Clases\Técnica\Log.vb" />
+    <Compile Include="Formularios\Contratista.Designer.vb">
+      <DependentUpon>Contratista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Contratista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmInicio_Sergio.Designer.vb">
+      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmInicio_Sergio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmTrabajador.Designer.vb">
+      <DependentUpon>FrmTrabajador.vb</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmTrabajador.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +115,6 @@
       <DependentUpon>Inicio.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Inicio.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Trabajador.vb" />
-    <Compile Include="Formularios\Trabajador.Designer.vb">
-      <DependentUpon>Trabajador.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -123,8 +134,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\Contratista.resx">
+      <DependentUpon>Contratista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Contratistas.resx">
+      <DependentUpon>Contratistas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmInicio_Sergio.resx">
+      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTrabajador.resx">
       <DependentUpon>FrmTrabajador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
