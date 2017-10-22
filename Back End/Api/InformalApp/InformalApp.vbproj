@@ -86,6 +86,24 @@
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
     <Compile Include="Clases\Técnica\Log.vb" />
+    <Compile Include="Formularios\Contratista.Designer.vb">
+      <DependentUpon>Contratista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Contratista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Contratistas.Designer.vb">
+      <DependentUpon>Contratistas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Contratistas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Trabajador.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +128,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\Contratista.resx">
+      <DependentUpon>Contratista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Contratistas.resx">
+      <DependentUpon>Contratistas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Trabajador.resx">
       <DependentUpon>Trabajador.vb</DependentUpon>
     </EmbeddedResource>

@@ -11,3 +11,18 @@ C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\ob
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.xml
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.pdb
 C:\Users\SERGIO ALFONSO\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.vbprojResolveAssemblyReference.cache
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.exe.config
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.exe
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.xml
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.pdb
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.exe
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.pdb
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\InformalApp.xml
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\bin\Debug\MySql.Data.dll
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.vbprojResolveAssemblyReference.cache
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.Frm_Contratista.resources
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.Contratistas.resources
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.Frm_Trabajador.resources
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.Resources.resources
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.vbproj.GenerateResource.Cache
+C:\Users\Germán\Documents\GitHub\InformalApp\Back End\Api\InformalApp\obj\Debug\InformalApp.Inicio.resources

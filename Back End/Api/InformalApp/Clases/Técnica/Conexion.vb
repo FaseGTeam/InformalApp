@@ -18,8 +18,7 @@ Public Class Conexion
             Me.Salida = "00, Conexion Exitosa"
 
         Catch ax As MySqlClient.MySqlException
-        Catch ex As Exception
-            Me.Salida = ex.Message
+            Me.Salida = ax.Message
 
         End Try
         Return Salida
@@ -33,6 +32,22 @@ Public Class Conexion
 
     End Sub
 
+    'Ejecuta un query de consulta de datos '
+    Public Function EjecutarConsultaDatos(comando) As MySqlDataReader
+        Try
+            Me.Query.CommandType = Data.CommandType.Text
+            Me.Query.CommandText = comando
+            Me.Query.Connection = Me.Conexion
+            Me.MysqlReader = Me.Query.ExecuteReader()
+
+        Catch Sqlex As MySqlClient.MySqlException
+            MsgBox($"Un error inesperado ha ocurrido: {Sqlex.Message}", MsgBoxStyle.Critical, $"Error número {Sqlex.Number}")
+        End Try
+
+        Return Me.MysqlReader
+    End Function
+
+    'Ejecuta una query en base de datos'
     Public Function Ejecutar(text) As String
         Try
             Me.Query.CommandType = Data.CommandType.Text
@@ -50,11 +65,11 @@ Public Class Conexion
             If Sqlex.Number = 1088 Then
                 Salida = "Registro Duplicado"
             Else
-                Dim log01 As New Log(1, $"Error {Sqlex.Message}", Date.Today, "")
-
+                MsgBox($"Un error inesperado ha ocurrido: {Sqlex.Message}")
+                'Dim log01 As New Log(1, $"Error {Sqlex.Message}", Date.Today, "")
             End If
         End Try
+
         Return Salida
     End Function
-
 End Class

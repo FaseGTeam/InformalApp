@@ -1,9 +1,9 @@
 ﻿Public Class DbContratista
     ''Obtiene todos los contratistas de db'
-    'Function Obtener() As Integer
+    Function Obtener() As Integer
 
-    '    Return 0
-    'End Function
+        Return 0
+    End Function
 
     ''Obtiene un contratista por id desde db'
     'Function ObtenerId() As Integer
