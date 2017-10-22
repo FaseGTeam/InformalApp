@@ -2,7 +2,7 @@
 Imports MySql.Data.MySqlClient
 
 Public Class Conexion
-    Public Cadena As String = "Database='db_informalapp' ;Data Source='localhost' ;User Id=root;password=123456"
+    Public Cadena As String = "Database='db_informalapp' ;Data Source='localhost' ;User Id=uapp;password=12345678"
     Public Registro As Integer
     Public Salida As String
 
@@ -12,10 +12,14 @@ Public Class Conexion
     Public MysqlReader As MySql.Data.MySqlClient.MySqlDataReader
 
 
-    Public Function Conectar() As String
+    Public Function Conectar(Optional ByVal isTest = False) As String
         Try
             Me.Conexion.Open()
             Me.Salida = "00, Conexion Exitosa"
+
+            If isTest Then
+                MsgBox(Me.Salida, MsgBoxStyle.Information)
+            End If
 
         Catch ax As MySqlClient.MySqlException
             Me.Salida = ax.Message
@@ -25,10 +29,18 @@ Public Class Conexion
 
     End Function
 
-    Public Sub CerraConection()
-        Me.Query.Dispose() 'Bajando de memoria el elemento del query'
-        Me.Conexion.Close() 'Cerrando la conexión'
-        Me.Conexion.Dispose() 'Bajando la conexión de memoria'
+    Public Sub CerraConection(Optional ByVal isTest = False)
+        Try
+            Me.Query.Dispose() 'Bajando de memoria el elemento del query'
+            Me.Conexion.Close() 'Cerrando la conexión'
+            Me.Conexion.Dispose() 'Bajando la conexión de memoria'
+
+            If isTest Then
+                MsgBox("Conexión cerrada correctamente.", MsgBoxStyle.Information)
+            End If
+        Catch ax As MySqlClient.MySqlException
+            Me.Salida = ax.Message
+        End Try
 
     End Sub
 

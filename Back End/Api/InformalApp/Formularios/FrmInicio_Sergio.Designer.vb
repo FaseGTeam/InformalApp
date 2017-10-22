@@ -31,6 +31,7 @@ Partial Class FrmInicio_Sergio
         Me.Label_ContratistaInicio = New System.Windows.Forms.Label()
         Me.Lable_LaborInicio = New System.Windows.Forms.Label()
         Me.Label_LogInicio = New System.Windows.Forms.Label()
+        Me.ButtonTestCon = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button_FrmTrabajador
@@ -114,12 +115,22 @@ Partial Class FrmInicio_Sergio
         Me.Label_LogInicio.TabIndex = 7
         Me.Label_LogInicio.Text = "Log"
         '
+        'ButtonTestCon
+        '
+        Me.ButtonTestCon.Location = New System.Drawing.Point(29, 13)
+        Me.ButtonTestCon.Name = "ButtonTestCon"
+        Me.ButtonTestCon.Size = New System.Drawing.Size(122, 23)
+        Me.ButtonTestCon.TabIndex = 8
+        Me.ButtonTestCon.Text = "Test de Conexión"
+        Me.ButtonTestCon.UseVisualStyleBackColor = True
+        '
         'FrmInicio_Sergio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(671, 366)
+        Me.Controls.Add(Me.ButtonTestCon)
         Me.Controls.Add(Me.Label_LogInicio)
         Me.Controls.Add(Me.Lable_LaborInicio)
         Me.Controls.Add(Me.Label_ContratistaInicio)
@@ -143,4 +154,5 @@ Partial Class FrmInicio_Sergio
     Friend WithEvents Label_ContratistaInicio As Label
     Friend WithEvents Lable_LaborInicio As Label
     Friend WithEvents Label_LogInicio As Label
+    Friend WithEvents ButtonTestCon As Button
 End Class
