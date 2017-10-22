@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clases\Contratista.vb" />
+    <Compile Include="Clases\Controladores\ValidacionesFrm.vb" />
     <Compile Include="Clases\Estado.vb" />
     <Compile Include="Clases\Labor.vb" />
     <Compile Include="Clases\Modulos\CRUD_Contratista.vb" />
@@ -86,11 +87,11 @@
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
     <Compile Include="Clases\Técnica\Log.vb" />
-    <Compile Include="Formularios\Trabajador.vb">
+    <Compile Include="Formularios\FrmTrabajador.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Trabajador.Designer.vb">
-      <DependentUpon>Trabajador.vb</DependentUpon>
+    <Compile Include="Formularios\FrmTrabajador.Designer.vb">
+      <DependentUpon>FrmTrabajador.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -110,8 +111,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\Trabajador.resx">
-      <DependentUpon>Trabajador.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmTrabajador.resx">
+      <DependentUpon>FrmTrabajador.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
