@@ -3,7 +3,6 @@
 
     'Atributos de la Clase Contratista'
     Private _Id As Integer 'Código del Contratista'
-    Private _ActEconomica As String 'Actividad económica que Realiza el contratista'
     Private _EmpContatista As String 'Empresa a la que pertenece el contratista (Opcional)'
     Private _Cargo As String 'Carqo que posee el Contratista
 
@@ -18,16 +17,6 @@
             _Id = value
         End Set
     End Property 'Fin Propieddad Id'
-
-    'Propiedad Actividad Economica de Contratista'
-    Public Property ActEconomica() As String
-        Get
-            Return _ActEconomica
-        End Get
-        Set(ByVal value As String)
-            _ActEconomica = value
-        End Set
-    End Property 'Fin Propiedad ActEconomica'
 
     'Propiedad Empresa a la que pertence el Contratista'
     Public Property EmpContratista() As String
@@ -50,15 +39,14 @@
     End Property 'Fin Propiedad Cargo'
 
     'CONSTRUCTOR de la Clase Contratista'
-    Public Sub New(ByVal P1DocIdentidad,
-                   ByVal P2Nombres,
-                   ByVal P3Apellidos,
-                   ByVal P4Genero,
-                   ByVal P5FecNacimiento,
-                   ByVal P6Id,
-                   ByVal P7ActEconomica,
-                   ByVal P8EmpContratista,
-                   ByVal P9Cargo)
+    Public Sub New(ByVal P1DocIdentidad As Integer,
+                   ByVal P2Nombres As String,
+                   ByVal P3Apellidos As String,
+                   ByVal P4Genero As String,
+                   ByVal P5FecNacimiento As String,
+                   ByVal P6Id As Integer,
+                   ByVal P8EmpContratista As String,
+                   ByVal P9Cargo As String)
 
         'Atributos heredados de la Clase Persona'
         MyBase.New(P1DocIdentidad,
@@ -68,7 +56,6 @@
                    P5FecNacimiento)
         'Atributos de la Clase Contratista'
         Me.Id = P6Id
-        Me.ActEconomica = P7ActEconomica
         Me.EmpContratista = P8EmpContratista
         Me.Cargo = P9Cargo
 

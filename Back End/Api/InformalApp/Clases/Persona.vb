@@ -4,7 +4,7 @@
     Private _Nombres As String 'Nombres de la Persona'
     Private _Apellidos As String 'Apelllidos de la Persona'
     Private _Genero As String 'Género de la persona'
-    Private _FecNacimiento As Date 'Fecha de Nacimiento de la Persona'
+    Private _FecNacimiento As String 'Fecha de Nacimiento de la Persona'
 
     'Propiedades de los Atributos de la clase Persona'
 
@@ -49,11 +49,11 @@
     End Property 'Fin Propiedad Género'
 
     'Propiedad Fecha de Nacimiento de Persona'
-    Public Property FecNacimiento() As Date
+    Public Property FecNacimiento() As String
         Get
             Return _FecNacimiento
         End Get
-        Set(ByVal value As Date)
+        Set(ByVal value As String)
             _FecNacimiento = value
         End Set
     End Property 'Fin Propiedad FechaNacimiento'
@@ -63,7 +63,7 @@
                    ByVal P2Nombres As String,
                    ByVal P3Apellidos As String,
                    ByVal p4Genero As String,
-                   ByVal p5FecNacimiento As Date)
+                   ByVal p5FecNacimiento As String)
         Me.Cedula = p1Cedula
         Me.Nombres = P2Nombres
         Me.Apellidos = P3Apellidos

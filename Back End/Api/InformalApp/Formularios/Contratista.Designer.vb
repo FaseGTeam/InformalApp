@@ -23,16 +23,16 @@ Partial Class Frm_Contratista
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBoxId = New System.Windows.Forms.TextBox()
+        Me.TextBoxCedula = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBoxNombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBoxApellido = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBoxCargo = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.MaskedTextBox_FecNacimientoT = New System.Windows.Forms.MaskedTextBox()
+        Me.FecNacimiento = New System.Windows.Forms.MaskedTextBox()
         Me.Label_FecNacimientoT = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.SuspendLayout()
@@ -46,19 +46,19 @@ Partial Class Frm_Contratista
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Id"
         '
-        'TextBox1
+        'TextBoxId
         '
-        Me.TextBox1.Location = New System.Drawing.Point(124, 26)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.TextBoxId.Location = New System.Drawing.Point(124, 26)
+        Me.TextBoxId.Name = "TextBoxId"
+        Me.TextBoxId.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxId.TabIndex = 1
         '
-        'TextBox2
+        'TextBoxCedula
         '
-        Me.TextBox2.Location = New System.Drawing.Point(124, 52)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TextBoxCedula.Location = New System.Drawing.Point(124, 52)
+        Me.TextBoxCedula.Name = "TextBoxCedula"
+        Me.TextBoxCedula.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxCedula.TabIndex = 3
         '
         'Label2
         '
@@ -69,12 +69,12 @@ Partial Class Frm_Contratista
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Cédula"
         '
-        'TextBox3
+        'TextBoxNombre
         '
-        Me.TextBox3.Location = New System.Drawing.Point(124, 78)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.TextBoxNombre.Location = New System.Drawing.Point(124, 78)
+        Me.TextBoxNombre.Name = "TextBoxNombre"
+        Me.TextBoxNombre.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxNombre.TabIndex = 5
         '
         'Label3
         '
@@ -85,12 +85,12 @@ Partial Class Frm_Contratista
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Nombre"
         '
-        'TextBox4
+        'TextBoxApellido
         '
-        Me.TextBox4.Location = New System.Drawing.Point(124, 104)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 7
+        Me.TextBoxApellido.Location = New System.Drawing.Point(124, 104)
+        Me.TextBoxApellido.Name = "TextBoxApellido"
+        Me.TextBoxApellido.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxApellido.TabIndex = 7
         '
         'Label4
         '
@@ -101,12 +101,12 @@ Partial Class Frm_Contratista
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Apellido"
         '
-        'TextBox5
+        'TextBoxCargo
         '
-        Me.TextBox5.Location = New System.Drawing.Point(124, 156)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 9
+        Me.TextBoxCargo.Location = New System.Drawing.Point(124, 156)
+        Me.TextBoxCargo.Name = "TextBoxCargo"
+        Me.TextBoxCargo.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxCargo.TabIndex = 9
         '
         'Label5
         '
@@ -117,14 +117,14 @@ Partial Class Frm_Contratista
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Cargo"
         '
-        'MaskedTextBox_FecNacimientoT
+        'FecNacimiento
         '
-        Me.MaskedTextBox_FecNacimientoT.Location = New System.Drawing.Point(124, 130)
-        Me.MaskedTextBox_FecNacimientoT.Mask = "0000/00/00"
-        Me.MaskedTextBox_FecNacimientoT.Name = "MaskedTextBox_FecNacimientoT"
-        Me.MaskedTextBox_FecNacimientoT.Size = New System.Drawing.Size(100, 20)
-        Me.MaskedTextBox_FecNacimientoT.TabIndex = 25
-        Me.MaskedTextBox_FecNacimientoT.ValidatingType = GetType(Date)
+        Me.FecNacimiento.Location = New System.Drawing.Point(124, 130)
+        Me.FecNacimiento.Mask = "0000/00/00"
+        Me.FecNacimiento.Name = "FecNacimiento"
+        Me.FecNacimiento.Size = New System.Drawing.Size(100, 20)
+        Me.FecNacimiento.TabIndex = 25
+        Me.FecNacimiento.ValidatingType = GetType(Date)
         '
         'Label_FecNacimientoT
         '
@@ -148,17 +148,17 @@ Partial Class Frm_Contratista
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.FlowLayoutPanel1)
-        Me.Controls.Add(Me.MaskedTextBox_FecNacimientoT)
+        Me.Controls.Add(Me.FecNacimiento)
         Me.Controls.Add(Me.Label_FecNacimientoT)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TextBoxCargo)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBoxApellido)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBoxNombre)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBoxCedula)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxId)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Frm_Contratista"
         Me.Text = "Frm_Contratista"
@@ -168,16 +168,16 @@ Partial Class Frm_Contratista
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBoxId As TextBox
+    Friend WithEvents TextBoxCedula As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBoxNombre As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBoxApellido As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBoxCargo As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents MaskedTextBox_FecNacimientoT As MaskedTextBox
+    Friend WithEvents FecNacimiento As MaskedTextBox
     Friend WithEvents Label_FecNacimientoT As Label
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
 End Class

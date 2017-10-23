@@ -10,6 +10,8 @@ Public Class Conexion
     Public Conexion As New MySql.Data.MySqlClient.MySqlConnection(Cadena)
     Public Query As New MySql.Data.MySqlClient.MySqlCommand
     Public MysqlReader As MySql.Data.MySqlClient.MySqlDataReader
+    Public MysqlDataAdapter As MySql.Data.MySqlClient.MySqlDataAdapter
+    Public DataTable As New DataTable()
 
 
     Public Function Conectar(Optional ByVal isTest = False) As String
@@ -44,19 +46,33 @@ Public Class Conexion
 
     End Sub
 
-    'Ejecuta un query de consulta de datos '
-    Public Function EjecutarConsultaDatos(comando) As MySqlDataReader
+    Function consultaSeleccion(ByVal comando As String) As MySqlDataReader
+        If Me.Conexion.State = ConnectionState.Closed Then
+            Me.Conectar()
+        End If
+
+        Me.Query.CommandType = Data.CommandType.Text
+        Me.Query.CommandText = comando
+        Me.Query.Connection = Me.Conexion
+        Me.MysqlReader = Me.Query.ExecuteReader()
+        Return Me.MysqlReader
+    End Function
+
+    'Ejecuta un query de consulta de datos y devulve un DataTale para ser usado en DataGridView'
+    Public Function ObtenerTabla(ByVal comando As String) As DataTable
         Try
             Me.Query.CommandType = Data.CommandType.Text
             Me.Query.CommandText = comando
             Me.Query.Connection = Me.Conexion
-            Me.MysqlReader = Me.Query.ExecuteReader()
-
+            Me.MysqlDataAdapter = New MySqlDataAdapter(Me.Query.CommandText, Me.Query.Connection)
+            Me.DataTable.Clear()
+            Me.MysqlDataAdapter.Fill(Me.DataTable)
+            CerraConection()
         Catch Sqlex As MySqlClient.MySqlException
             MsgBox($"Un error inesperado ha ocurrido: {Sqlex.Message}", MsgBoxStyle.Critical, $"Error número {Sqlex.Number}")
         End Try
 
-        Return Me.MysqlReader
+        Return Me.DataTable
     End Function
 
     'Ejecuta una query en base de datos'
@@ -73,6 +89,7 @@ Public Class Conexion
             Else
                 Salida = "Registro Fallido"
             End If
+            CerraConection()
         Catch Sqlex As MySqlClient.MySqlException
             If Sqlex.Number = 1088 Then
                 Salida = "Registro Duplicado"
