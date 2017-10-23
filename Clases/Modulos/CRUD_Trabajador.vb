@@ -126,23 +126,26 @@
 
 
     Public Function ReadDataList()
+        Dim dtTrabajador As New DataTable
         Try
             Dim ConexionGuardar As New Conexion
             Dim Llamado As String
+
             Llamado = ConexionGuardar.Conectar()
             If Llamado = "00, Conexion Exitosa" Then
-                Dim Query As String = "SELECT Nombre FROM Trabajador  " '"
+                Dim Query As String = "SELECT Cedula, Nombre FROM Trabajador  " '"
 
                 ConexionGuardar.Query.CommandText = Query
                 ConexionGuardar.Query.CommandType = Data.CommandType.Text
                 ConexionGuardar.Query.Connection = ConexionGuardar.Conexion
                 DataReader = ConexionGuardar.Query.ExecuteReader()
+                dtTrabajador.Load(DataReader)
             Else
                 MsgBox(Llamado)
             End If
         Catch ex As Exception
             MsgBox(ex)
         End Try
-        Return DataReader
+        Return dtTrabajador
     End Function
 End Class
