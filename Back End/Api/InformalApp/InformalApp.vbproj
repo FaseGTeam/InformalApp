@@ -87,16 +87,16 @@
     <Compile Include="Clases\Trabajador.vb" />
     <Compile Include="Clases\Técnica\Conexion.vb" />
     <Compile Include="Clases\Técnica\Log.vb" />
-    <Compile Include="Formularios\Contratista.Designer.vb">
-      <DependentUpon>Contratista.vb</DependentUpon>
+    <Compile Include="Formularios\FrmContratista.Designer.vb">
+      <DependentUpon>FrmContratista.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Contratista.vb">
+    <Compile Include="Formularios\FrmContratista.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmInicio_Sergio.Designer.vb">
-      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
+    <Compile Include="Formularios\FrmInicio.Designer.vb">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmInicio_Sergio.vb">
+    <Compile Include="Formularios\FrmInicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmTrabajador.Designer.vb">
@@ -105,10 +105,10 @@
     <Compile Include="Formularios\FrmTrabajador.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Contratistas.Designer.vb">
-      <DependentUpon>Contratistas.vb</DependentUpon>
+    <Compile Include="Formularios\FrmConsulta\FrmConsultaContratistas.Designer.vb">
+      <DependentUpon>FrmConsultaContratistas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Contratistas.vb">
+    <Compile Include="Formularios\FrmConsulta\FrmConsultaContratistas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -128,14 +128,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\Contratista.resx">
-      <DependentUpon>Contratista.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmContratista.resx">
+      <DependentUpon>FrmContratista.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Contratistas.resx">
-      <DependentUpon>Contratistas.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmConsulta\FrmConsultaContratistas.resx">
+      <DependentUpon>FrmConsultaContratistas.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmInicio_Sergio.resx">
-      <DependentUpon>FrmInicio_Sergio.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\FrmInicio.resx">
+      <DependentUpon>FrmInicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmTrabajador.resx">
       <DependentUpon>FrmTrabajador.vb</DependentUpon>

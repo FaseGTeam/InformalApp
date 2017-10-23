@@ -2,7 +2,7 @@
 Imports MySql.Data.MySqlClient
 
 Public Class Conexion
-    Public Cadena As String = "Database='db_informalapp' ;Data Source='localhost' ;User Id=root;password=123456"
+    Public Cadena As String = "Database='db_informalapp' ;DataSource='localhost' ; UserID = 'root' ; Password = '' "
     Public Registro As Integer
     Public Salida As String
 
@@ -18,6 +18,7 @@ Public Class Conexion
             Me.Salida = "00, Conexion Exitosa"
 
         Catch ax As MySqlClient.MySqlException
+            Me.Salida = ax.Message
         Catch ex As Exception
             Me.Salida = ex.Message
 
